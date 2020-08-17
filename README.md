@@ -10,7 +10,7 @@ php封装的淘宝api类库，简单好用，配合文档食用，不用再去�
 ````
 {
     "require": {
-        "lovefc/TaobaoApi": "0.0.1"
+        "lovefc/taobaoapi": "0.0.1"
     }		
 }
 ````
