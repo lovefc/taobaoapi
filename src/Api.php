@@ -191,8 +191,7 @@ class Api
         $data = json_decode($data, true);
         $data = isset($data['top_auth_token_refresh_response']['token_result'])?$data['top_auth_token_refresh_response']['token_result']:null;
 		if($data){
-		   $this->saveToken($data);
-		   return true;
+		   return $data;
 		}
 		return false;
     }	
