@@ -2,7 +2,7 @@
     "name": "lovefc/taobaoapi",
     "description": "淘宝开放平台基础api类",
     "keywords": ["php","淘宝","淘宝开放平台","淘宝基础api类"],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/lovefc/taobaoapi.git",
     "license": "MIT",
     "require": {

@@ -32,10 +32,10 @@ class Api
     public $api_url; // api接口
 
     // 构造函数
-    public function __construct($config)
+    public function __construct($config='', $token_json='')
     {
         if ($config) {
-            $this->configuration($config, $token_json);
+            $this->configuration($config);
             $this->restToken();
         }
         if (!empty($token_json) && is_array($token_json)) {
@@ -45,7 +45,7 @@ class Api
     }
 
     // 解析配置
-    public function configuration($config, $token_json)
+    public function configuration($config)
     {
         $this->client_id = isset($config['client_id']) ? $config['client_id'] : '';
         $this->client_secret = isset($config['client_secret']) ? $config['client_secret'] : '';
